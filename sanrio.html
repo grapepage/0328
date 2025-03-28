@@ -41,11 +41,13 @@
             border: none;
             background: none;
             cursor: pointer;
+            padding: 10px;
         }
 
        .icon-button img {
             width: 60px;
             height: 60px;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -54,23 +56,57 @@
     <div class="calculator">
         <input type="text" id="display" readonly>
         <div class="buttons">
-            <button class="icon-button" onclick="appendToDisplay('7')"><img src="https://www.sanrio.com.cn/images/family/1/d1.png" alt="7"></button>
-            <button class="icon-button" onclick="appendToDisplay('8')"><img src="https://www.sanrio.com.cn/images/family/1/d1.png" alt="8"></button>
-            <button class="icon-button" onclick="appendToDisplay('9')"><img src="https://www.sanrio.com.cn/images/family/1/d1.png" alt="9"></button>
-            <button class="icon-button" onclick="appendToDisplay('/')"><img src="https://www.sanrio.com.cn/images/family/2/d1.png" alt="/"></button>
-            <button class="icon-button" onclick="appendToDisplay('4')"><img src="https://www.sanrio.com.cn/images/family/4/d1.png" alt="4"></button>
-            <button class="icon-button" onclick="appendToDisplay('5')"><img src="https://www.sanrio.com.cn/images/family/4/d1.png" alt="5"></button>
-            <button class="icon-button" onclick="appendToDisplay('6')"><img src="https://www.sanrio.com.cn/images/family/4/d1.png" alt="6"></button>
-            <button class="icon-button" onclick="appendToDisplay('*')"><img src="https://www.sanrio.com.cn/images/family/2/d1.png" alt="*"></button>
-            <button class="icon-button" onclick="appendToDisplay('1')"><img src="https://www.sanrio.com.cn/images/family/3/d1.png" alt="1"></button>
-            <button class="icon-button" onclick="appendToDisplay('2')"><img src="https://www.sanrio.com.cn/images/family/3/d1.png" alt="2"></button>
-            <button class="icon-button" onclick="appendToDisplay('3')"><img src="https://www.sanrio.com.cn/images/family/3/d1.png" alt="3"></button>
-            <button class="icon-button" onclick="appendToDisplay('-')"><img src="https://www.sanrio.com.cn/images/family/2/d1.png" alt="-"></button>
-            <button class="icon-button" onclick="appendToDisplay('0')"><img src="https://www.sanrio.com.cn/images/family/3/d1.png" alt="0"></button>
-            <button class="icon-button" onclick="appendToDisplay('.')"><img src="https://www.sanrio.com.cn/images/family/2/d1.png" alt="."></button>
-            <button class="icon-button" onclick="calculate()"><img src="https://dummyimage.com/60x60/000/fff&text==" alt="="></button>
-            <button class="icon-button" onclick="appendToDisplay('+')"><img src="https://dummyimage.com/60x60/000/fff&text=+" alt="+"></button>
-            <button class="icon-button" onclick="clearDisplay()"><img src="https://dummyimage.com/60x60/000/fff&text=C" alt="C"></button>
+            <button class="icon-button" onclick="appendToDisplay('7')">
+                <img src="https://www.sanrio.com.cn/images/family/3/d1.png" alt="7">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('8')">
+                <img src="https://www.sanrio.com.cn/images/family/3/d1.png" alt="8">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('9')">
+                <img src="https://www.sanrio.com.cn/images/family/3/d1.png" alt="9">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('/')">
+                <img src="https://dummyimage.com/60x60/000/fff&text=/" alt="/">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('4')">
+                <img src="https://www.sanrio.com.cn/images/family/2/d1.png" alt="4">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('5')">
+                <img src="https://www.sanrio.com.cn/images/family/2/d1.png" alt="5">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('6')">
+                <img src="https://www.sanrio.com.cn/images/family/2/d1.png" alt="6">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('*')">
+                <img src="https://dummyimage.com/60x60/000/fff&text=*" alt="*">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('1')">
+                <img src="https://www.sanrio.com.cn/images/family/1/d1.png" alt="1">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('2')">
+                <img src="https://www.sanrio.com.cn/images/family/1/d1.png" alt="2">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('3')">
+                <img src="https://www.sanrio.com.cn/images/family/1/d1.png" alt="3">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('-')">
+                <img src="https://dummyimage.com/60x60/000/fff&text=-" alt="-">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('0')">
+                <img src="https://dummyimage.com/60x60/000/fff&text=0" alt="0">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('.')">
+                <img src="https://dummyimage.com/60x60/000/fff&text=." alt=".">
+            </button>
+            <button class="icon-button" onclick="calculate()">
+                <img src="https://dummyimage.com/60x60/000/fff&text==" alt="=">
+            </button>
+            <button class="icon-button" onclick="appendToDisplay('+')">
+                <img src="https://dummyimage.com/60x60/000/fff&text=+" alt="+">
+            </button>
+            <button class="icon-button" onclick="clearDisplay()">
+                <img src="https://dummyimage.com/60x60/000/fff&text=C" alt="C">
+            </button>
         </div>
     </div>
     <script>
@@ -92,5 +128,4 @@
     </script>
 </body>
 
-</html>
-    
+</html>    
